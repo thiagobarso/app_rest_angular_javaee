@@ -13,13 +13,13 @@ public class Produto implements Serializable {
 	
 	private String nome;
 	
-	private Fornecedor fonecedor;
+	private Fornecedor fornecedor;
 
-	public Produto(Integer codigo, String nome, Fornecedor fonecedor) {
+	public Produto(Integer codigo, String nome, Fornecedor fornecedor) {
 		super();
 		this.codigo = codigo;
 		this.nome = nome;
-		this.fonecedor = fonecedor;
+		this.fornecedor = fornecedor;
 	}
 
 	public Produto() {
@@ -42,12 +42,12 @@ public class Produto implements Serializable {
 		this.nome = nome;
 	}
 
-	public Fornecedor getFonecedor() {
-		return fonecedor;
+	public Fornecedor getFornecedor() {
+		return fornecedor;
 	}
 
-	public void setFonecedor(Fornecedor fonecedor) {
-		this.fonecedor = fonecedor;
+	public void setFornecedor(Fornecedor fornecedor) {
+		this.fornecedor = fornecedor;
 	}
 
 	@Override

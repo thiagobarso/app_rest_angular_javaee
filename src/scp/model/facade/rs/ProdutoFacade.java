@@ -16,7 +16,7 @@ import scp.model.domain.Produto;
 
 @Path("/produto")
 @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
-@Consumes(MediaType.APPLICATION_XML)
+@Consumes({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 public class ProdutoFacade {
 	
 	static ArrayList<Produto> produtos = new ArrayList<>();
